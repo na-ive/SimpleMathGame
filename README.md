@@ -12,5 +12,10 @@ Fitur Game :
 - Database (MySQL)
 - Leaderboard
 
+MySQL :
+- userName VARCHAR(30)
+- email VARCHAR(30)
+- score INT(11)
+
 URL Game :
 http://mathgamena.atwebpages.com/
