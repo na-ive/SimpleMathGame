@@ -17,8 +17,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/script.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Game UTS | Pemrograman Web</title>
 </head>
@@ -31,9 +31,9 @@
 
         echo "<div class=\"mid\"><div class=\"p-5 bg-white rounded shadow-sm\"><h4>Hallo  " . $_COOKIE['name'] . ", selamat datang kembali di permainan ini!</h4>";
 
-        echo "<p><a class=\"btn btn-warning text-white mt-2\" href=\"mathgamels\">Start Game</a> <a class=\"btn btn-danger text-white mt-2\" href=\"halloffame\">Hall of Fame</a></p>";
+        echo "<p><a class=\"btn btn-warning text-white mt-2\" href=\"/logic/mathgamels\">Start Game</a> <a class=\"btn btn-danger text-white mt-2\" href=\"/pages/halloffame\">Hall of Fame</a></p>";
 
-        echo "<p>Bukan anda? <a href=\"reinput\">klik disini</a></p></div></div>";
+        echo "<p>Bukan anda? <a href=\"/logic/reinput\">klik disini</a></p></div></div>";
     } else {
         // jika cookie tidak ada maka muncul form
     ?>
@@ -51,7 +51,7 @@
                             <label for="eml">Email:</label>
                             <input type="email" name="email" class="form-control" id="eml">
                             </div>
-                        <input class="btn btn-warning float-right text-white" type="submit" name="submit" value="Submit">
+                        <input class="btn btn-warning float-right text-white mt-2" type="submit" name="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -62,8 +62,7 @@
 
     ?>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 

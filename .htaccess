@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /
+
+# Lempar 404 ke custom page
+ErrorDocument 404 /pages/404.html
+
+# Hilangin .php dari URL (misal /halloffame jadi halloffame.php)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Hilangin .html dari URL (optional)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redirect ke /pages jika file/folder tidak ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ pages/$1 [L]
