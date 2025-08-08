@@ -4,7 +4,7 @@
 
 Bahasa Pemrograman : PHP
 
-Sebuah game matematika penjumlahan sederhana dengan jarak angka 0-20 yang hanya menjumlahkan 2 angka
+Sebuah game matematika penjumlahan sederhana dengan jarak angka 0-20 yang hanya menjumlahkan 2 angka dengan 5 nyawa
 
 Fitur Game :
 - Lives
